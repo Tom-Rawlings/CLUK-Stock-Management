@@ -1,0 +1,66 @@
+/*Styling button to apply changes to stock, with position, border and color. */
+.Stockbutton-A {
+    border: 0;
+    background: #7BC67B;
+    display: block;
+    margin: auto;
+    border: 2px solid #7BC67B;
+    text-align: center;
+    float: center;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*Styling button to revert changes to stock, with position, border and color. */
+.Stockbutton-R {
+    border: 0;
+    background: palevioletred;
+    display: block;
+    margin: auto;
+    border: 2px solid palevioletred;
+    text-align: center;
+    float: center;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*Styling button to edit stock, with position, border and color. */
+.Stockbutton-E {
+    border: 0;
+    background: yellow;
+    display: block;
+    margin: auto;
+    border: 2px solid yellow;
+    text-align: center;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*Positioning main table in the centre of the page. */
+#tableMain{
+    transform: translateX(160px);
+    width: 2000px;
+}
+
+/*Sizing container div to better fit the table. */
+.container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+}
+
+/*Making table striped. */
+table tbody:nth-child(odd){
+    background: #d6d2d7;
+}
+

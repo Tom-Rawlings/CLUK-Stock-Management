@@ -1,0 +1,136 @@
+.box {
+    background: #FDFDF6;
+    width: 400px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align=center;
+}
+
+.h1 {
+    text-align: center
+}
+
+.button {
+    border: 0;
+    background: #7BC67B;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #7BC67B;
+    padding: 14px 10px;
+    width: 150px;
+    text-align: center;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.title {
+    padding: 0;
+    background-color: black;
+}
+
+img.resize {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+img {
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+h3.company {
+    text-align: left;
+    font-family: sans-serif;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+h3 {
+    color: white;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.txt {
+    overflow: hidden;
+    width: 300px;
+}
+
+.txt .txt-item {
+    padding: 20px 0;
+    overflow: hidden;
+    clear: both;
+    line-height: 30px;
+    padding: 0px;
+}
+
+.txt .txt-item label {
+    float: left;
+    /* text-align: right; */
+    width: 150px;
+}
+
+.txt .txt-item div {
+    float: left;
+    width: 100%;
+}
+
+.txt-input {
+    width: 90%;
+    line-height: 1.5625rem;
+    border: 0.0625rem solid #BABABA;
+    font-size: small;
+    font-family: sans-serif;
+    color: #999999;
+}
+
+.txt-input:focus {
+    border: 0.09375rem solid #7BC67B;
+    outline: none;
+}
+
+.txt-select {
+    width: 90%;
+    height: 1.875rem;
+    border: 0.0625rem solid #BABABA;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(img/arrow.png) no-repeat scroll right center transparent;
+
+    padding-right: 14px;
+
+    font-size: small;
+    font-family: sans-serif;
+    color: #999999;
+}
+
+.txt-select:focus {
+    border: 0.09375rem solid #7BC67B;
+    outline: none;
+}
+.txt-select option {
+    font-size: small;
+    font-family: sans-serif;
+    color: #999999;
+}
+
+input[type="email"]:invalid {
+    color: red;
+    font-weight: bold;
+}

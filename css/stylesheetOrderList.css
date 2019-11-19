@@ -1,0 +1,159 @@
+
+.OrderTitle {
+	max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.titleLine{
+	max-width: 90%;
+    border: none;
+	background-color: #0e0e0e;
+	display: block;
+	height: 1.5px;
+	width:100%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    clear: both;
+}
+
+.OLbtnRed{
+    background-color: #FF3333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    
+    position: relative;
+    bottom: -10px;
+}
+
+.OLbtnGreen{
+    background-color: #66CC66;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 15px;
+    margin-right: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  
+    cursor: pointer;
+    
+    position: relative;
+    bottom: -10px;
+}
+
+.arrowbutton {
+  background-color: #ffffff;
+  border:none;
+  color: gray;
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  padding-right: 10px;
+  
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  margin:0px,0px;
+  cursor: pointer;
+}
+
+.barbutton{
+  background-color: #ffffff;
+  
+  border: none;
+  
+  color: black;
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px; 
+  margin-left: 0px;
+  
+  cursor: pointer;
+}
+
+.OLID, .OLTimeNDate, .OLStatus{
+    margin-right: 15px;
+}
+
+.OLinfoBox{
+    float: left;
+    display: inline-block;
+}
+
+.OLbtnBox{
+    float: right;
+    display: inline-block;
+    position: relative;
+    right: 8px;
+}
+
+.OLspread{
+	height: 0px;
+	overflow: hidden;
+    clear: both;
+}
+
+table{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    max-width: 90%;
+}
+
+th{
+    font-size: 18px;
+    height: 45px;
+}
+
+td{
+    height: 30px;
+}
+
+.scrollI{
+}
+
+.scrollQ{
+    width: 140px;
+}
+
+.scrollC{
+    width: 140px;
+}
+
+footer{
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    height: 80px;
+    line-height: 150px;
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    transform: translateY(-70px);
+}

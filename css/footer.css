@@ -1,0 +1,29 @@
+
+/*Giving footer an absolute position so that it sticks to the bottom of the page (sticky footer) */
+footer{
+    position: sticky;
+    background-color: black;
+    bottom: 0;
+    transform: translateY(50px);
+    max-height: 80px;
+    line-height: 80px;
+    width: 100%;
+}
+
+
+/*Setting the footer's text position and text color. */
+footer p{
+    background-color: black;
+    color: white;
+    transform: translateY(-70px);
+}
+
+/*Setting the main div's height to be the full viewport's height minus the height of the footer so footer sticks top bottom. Giving it a margin so the Options sidenav button is always clickable.*/
+#main{
+    min-height: calc(100vh - 80px);
+    position: relative;
+    padding: 10px;
+    margin: 30px;
+    transition: margin-left .5s;
+}
+

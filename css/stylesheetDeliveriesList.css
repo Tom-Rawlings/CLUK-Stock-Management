@@ -1,0 +1,49 @@
+/*Positioning Bootstrap table. */
+.table-striped{
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 60px;
+}
+
+/*Styling page header. */
+h4{
+    float: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*#main{
+   /* margin: 10px;
+    transition: margin-left .5s;
+}*/
+
+/*Styling search-bar input group container.*/
+.container-fluid{
+    margin-top: 45px;
+    margin-left: 70%;
+    margin-bottom: 20px;
+    width: 30%;
+    float: right;
+}
+
+/*Change color of search button on hover. */
+#search:hover{
+    background-color: goldenrod;
+}
+
+/*Styling background ad text of the pop-up modal header listing deliveries. */
+.modal-header{
+    background-color: goldenrod;
+    color: white;
+    text-transform:uppercase;
+  }
+
+  /*Styling modal's footer. */
+  .modal-footer{
+    background-color: goldenrod;
+  }
+  /*Changing color of close footer button. */
+  .modal-footermodal>button{
+   color:white;
+   }
+  

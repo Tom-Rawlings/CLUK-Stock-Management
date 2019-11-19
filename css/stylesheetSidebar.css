@@ -1,0 +1,183 @@
+/*Styling sidenav for restaurant manager pages, including transition time to pop out, text color and dimensions. */
+#mySidenavManager {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7BC67B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 150px;
+}
+
+#mySidenavManager a {
+ margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+#mySidenavManager a:hover {
+  color: #197921;
+}
+
+/*Styling sidenav for restaurant worker POS pages, including transition time to pop out, text color and dimensions. */
+#mySidenavRestaurantWorker a:hover {
+  color: #0c130d;
+}
+
+#mySidenavRestaurantWorker {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #004672;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 150px;
+}
+
+#mySidenavRestaurantWorker a {
+ margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/*Styling sidenav for driver's pages, including transition time to pop out, text color and dimensions. */
+#mySidenavDriver {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffef63;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 150px;
+}
+
+#mySidenavDriver h5{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#mySidenavDriver a {
+ margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #544f26;
+  display: block;
+  transition: 0.3s;
+}
+
+
+#mySidenavDriver a:hover {
+  color: #b7a40b;  }
+
+/*Styling sidenav for warehouse pages, including transition time to pop out, text color and dimensions. */
+  #mySidenavWarehouse {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ED0704;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 150px;
+  }
+  
+ #mySidenavWarehouse a {
+   margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f8f5f5;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /*Styling sidenav for possible human resources pages, including transition time to pop out, text color and dimensions. */
+  #mySidenavWarehouse a:hover {
+    color: #aa6364;  }
+  
+
+    #mySidenavHR {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #702f99;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 150px;
+    }
+    
+   #mySidenavHR a {
+     margin-bottom: 5px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f8f5f5;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    
+    #mySidenavHR a:hover {
+      color: #c592e5;  }
+
+
+
+/*Styling and positioning the sidenan close button. */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*Styling the options open sidenav button. */
+.options{
+	font-size:30px;
+	float:left;
+	cursor:pointer;
+}
+
+/*Giving main class apadding am */ 
+#main{
+	 transition: margin-left .5s;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*.show{
+	display: block;
+}*/
+/*Styling headers of all sidenavs. */
+.sidenav h5{
+	color: #ffffff;
+	font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/*Giving side icons a padding to space more on the left. */
+.sidenav i{
+  padding-right: 10px;
+}

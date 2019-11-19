@@ -1,0 +1,54 @@
+.container-fluid{
+    margin-top: 60px;
+    margin-left: 70%;
+    width: 30%;
+    float: right;
+}
+
+h4{
+    margin-top: 45px;
+    float: center;
+    text-align: center;
+}
+
+.table{
+    margin-top: 90px;
+}
+
+
+#modal-but{
+    background-color: crimson;
+    float: right;
+
+}
+
+.btn-secondary{
+    background-color: darkred;
+}
+#deliveryDet{
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    transform: translate3d(20px);
+}
+
+#input_deliverytime{
+    width: 40px;
+}
+
+.modal-body{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#search:hover{
+    background-color: crimson;
+}
+
+#search_cart{
+    display: inline-block;
+}
+
+#driver-list label{
+    color: black;
+}

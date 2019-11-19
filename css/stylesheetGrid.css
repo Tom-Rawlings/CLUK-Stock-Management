@@ -1,0 +1,74 @@
+
+/*Rows displayed as flexboxes. */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+/*Setting content inside a row to display as flex in a column format.*/
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Styling the horizontal divisor linbes in the grid. */
+hr{
+  border: 0.5px solid black;
+  margin-left: -0.8em;
+}
+
+/*Giving all button category elements on the page the same colour. */
+.btn {
+  background-color: #7BC67B;
+}
+
+
+/*Styling the collapsible category button in each row. */
+.cat{
+  background-color: #7BC67B;;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 50 px;
+	height: 42 px;
+ float: left;
+}
+
+/*Styling add quantity input buttons giving it a box shadow. */
+.column-sm-4 input[type=text] {
+  border: 1px solid #7BC67B;;
+  box-shadow: 0 0 0 1px #7BC67B;;
+  margin-bottom: 15px;
+}
+
+
+/*Giving top padding to the collapsibles section. */
+.collapse{
+  padding-top: 15px;
+}
+
+/*Styling casrt-opening button.*/
+#modal-but{
+  border-radius: 12px;
+  border-style: none;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  background-color: darkgreen;
+  margin-left: 90%;
+}
+
+/*Giving the ingredients' tables margins. */
+#tableIngredients td{
+  padding: 50px;
+  border: 2px solid lightgrey;
+}
+
+/*Positioning the ingredients' tables in the center of the row.*/
+#tableIngredients{
+  float: center;
+  margin-left: 500px;
+}

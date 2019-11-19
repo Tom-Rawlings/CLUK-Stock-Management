@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html>
+<head> <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>
+CLUK Deliveries
+</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/Cluk/css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="/Cluk/css/stylesheetSidebar.css">
+<link rel="stylesheet" type="text/css" href="/Cluk/css/stylesheetGrid.css">
+<link rel="stylesheet" type="text/css" href="/Cluk/css/cart.css">
+<script src="js/jquery.mycart.js"></script>
+</head>
+
+
+ <body>
+  <?php
+    include($_SERVER['DOCUMENT_ROOT'] . "/Cluk/html/header.html");
+  ?>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="myDropdown">
+
+ <h5>Orders</h5>
+	<a class="dropdown-item" href="#">New Order</a>
+	<a class="dropdown-item" href="#">Order History</a>
+	<a class="dropdown-item" href="#">Order Analytics</a>
+  </div>
+
+  <hr/>
+  <div class= "myDropdown">
+ <h5>Stock</h5>
+	<a class="dropdown-item" href="#">Current Stock</a>
+	</div>
+  <hr/>
+  
+  
+  <div class="myDropdown">
+  <h5>Staff Registration</h5>
+  
+		<a class="dropdown-item" href="#">Add Staff</a>
+		<a class="dropdown-item" href="#">Staff List</a>
+		</div>
+  <hr/>
+  <div class = "myDropdown">
+  <h5>Contacts</h5>
+	<a class="dropdown-item" href="#">Warehouse</a>
+	<a class="dropdown-item" href="#">Drivers</a>
+	<a class="dropdown-item" href="#">Restaurants</a>	
+</div>
+
+</div>
+<span class="options" onclick="openNav()">&#9776; Options</span>
+
+<div id="main">
+
+<div class="container">
+  <div class="row">
+      <div class="column-sm-4" id="search">
+          <form class="form-inline active-green-3 active-green-4">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+            </form>
+    </div>
+  </div>
+  <div class="row" >
+      
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropBread">
+              Bread &#8595;
+            </button>
+                <div id="dropBread" class="collapse">
+                  <a class="dropdown-item" href="#">Sesame Seeds Bun
+                      <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                          </div>
+                      </div>
+                  </a>
+                </div>
+            </div>
+         </div>
+  </div>
+    <hr />
+    <div class="row" >
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropMeat">
+              Meat &#8595;
+            </button>
+            <div id="dropMeat" class="collapse">
+              <div class="item">
+                <p class="d-inline-block" id="chick_pieces"> Chicken Pieces
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" id="add" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                        </div>
+                     </div>
+                    </p>
+              </div>
+                <p class="d-inline-block"> Chicken Breast Fillets
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                        </div>
+                 </div>
+                </p>
+                <p class="d-inline-block">Chicken Strips
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                        </div>
+                    </div>
+               </p>
+              </div>
+          </div>
+        </div>
+</div>
+    <hr />
+    <div class="row" >
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropVeg">
+      Sides &#8595;
+              </button>
+              <div id="dropVeg" class="collapse">
+              <p class="d-inline-block">Shredded Iceberg Lettuce
+                  <div class="input-group mb-3">
+                      <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                      </div>
+                  </div>
+                </p>
+              <p class="d-inline-block">Uncooked French Fries
+                  <div class="input-group mb-3">
+                      <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                      </div>
+                  </div>
+                </p>
+              <p class="d-inline-block">Hash Browns
+                  <div class="input-group mb-3">
+                      <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                      </div>
+                  </div>
+                </p>   
+          </div>
+          </div>
+    </div>
+</div>
+    <hr />
+    <div class="row" >
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropVegetarian">
+      Vegetarian &#8595;
+              </button>
+              <div id="dropVegetarian" class="collapse">
+                  <p class="d-inline-block">Mycoprotein Based Meat Substitute Southern Fried Strips
+                      <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                          </div>
+                      </div>
+                      </p>
+                      <p class="d-inline-block">Mycoprotein Based Meat Substitute Southern Fried Burger
+                          <div class="input-group mb-3">
+                              <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                              </div>
+                          </div>
+                          </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row" >
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropSauces">
+         Sauces &#8595;
+            </button>
+            <div id="dropSauces" class="collapse">
+                  <p class="d-inline-block">Mayonnaise
+                      <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                          </div>
+                      </div>
+                  </p>
+              </div>
+        </div>
+    </div>
+    </div>
+    <hr />
+    <div class="row" >
+    <div class="column-sm-4">
+        <div class="dropdown">
+            <button class= "cat" data-toggle="collapse" data-target="#dropDrinks">
+      Drinks &#8595;
+              </button>
+              <div id="dropDrinks" class="collapse">
+                  <p class="d-inline-block">Cola Syrup</p>
+                      <div class="input-group mb-3">
+                          <input type="number" class="form-control" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Add Item</button>
+                          </div>
+                      </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    <hr />
+
+  </div>
+
+</div>
+
+<!----<div class="cd-cart">
+    <div class="wrapper">
+       <header>
+          <h2>Order Summary</h2>
+          <span class="undo">Item removed. <a href="#0">Undo</a></span>
+       </header>
+    
+       <div class="body">
+          <ul>
+              <li class="product">
+
+             <!-- products added to the cart will be inserted here using JavaScript -->
+          <!----</ul>
+       </div>
+
+       <footer>
+          <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+       </footer>
+    </div>
+ </div> -->
+
+
+
+<!-- <div id="navbar-cart" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>
+            <a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <span class="badge"></span>
+                <span class="total_price">£0.00</span>
+            </a>
+        </li>
+    </ul>
+ </div>
+
+<div id="popover_content_wrapper">
+    <span id="cart_details"></span>
+     <div id="order_cart">
+        <a href="#" class="btn btn-primary" id="check_out_cart">
+          <span class="glyphicon glyphicon-shopping-cart"></span>Order Now
+        </a>
+        <a href="#" class="btn btn-default" id="empty_cart">
+          <span class="glyphicon glyphicon-trash"></span>Delete
+        </a>
+     </div>
+</div>
+
+<div id="display_item">
+
+
+
+</div>-->
+
+<div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!--Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-sm" role="document">
+
+
+   <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Order Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+           </button>
+      </div>
+      <div class="modal-body">
+          <div class="row d-flex justify-content-center align-items-left">
+              <div class="body">
+                  <ul>
+                      <li class="product">
+        
+
+
+                     <!-- products added to the cart will be inserted here using JavaScript -->
+                   </ul>
+               </div>
+        
+              <a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
+                  <span class="glyphicon glyphicon-shopping-cart"></span>
+                  <span class="badge"></span>
+                  <span class="total_price">£0.00</span>
+              </a>
+    
+          
+      </div>
+      <div class="modal-footer justify-content-left">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Confirm Order</button>
+        <button type="button" class="btn btn-primary">Save Order</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel Order</button>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Full Height Modal Right -->
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+   document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+/*
+function myOrderFunction() {
+  document.getElementById("dropdownMenuButton").classList.toggle("show");
+}
+function myOrderFunctionStock() {
+  document.getElementById("dropMenuStock").classList.toggle("show");
+}
+function myOrderFunctionReg() {
+  document.getElementById("dropMenuReg").classList.toggle("show");
+}
+
+function myOrderFunctionContacts() {
+  document.getElementById("dropMenuContact").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.droplink')) {
+    var dropdowns = document.getElementsByClassName("dropContent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}*/
+
+
+$("#add").click(function(){
+  var productId = $("#chick_pieces").val();
+  
+  var data = {
+    'chick_pieces': productId,
+    
+  };
+
+ var showDone = function() {
+  document.getElementById 
+ }
+
+/*
+$('.dropdown-toggle').dropdown()
+
+$(document.ready(function(){
+  function load_product()
+  {
+      $.ajax({
+        url: "             .php",
+        method: "POST",
+        success: function(data)
+        {
+          $('#display_item').html(data);
+        } 
+      })
+  }
+}))*/
+</script>
+
+
+  
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

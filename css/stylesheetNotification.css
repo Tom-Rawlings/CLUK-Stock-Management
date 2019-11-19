@@ -1,0 +1,40 @@
+
+  .segments {
+    display: inline-block;
+margin-top: 100px;
+  }
+
+.segments p{
+    float: left;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+.segments button{
+    float: right;
+   margin-right: 100px;
+}
+
+#notification-list table{
+	margin-top: 10%;
+	text-align: center;
+	width: 90%;
+}
+
+#notification-list td{
+	padding: 2% 0;
+}
+
+#notification-list .notifications{
+	text-align: center;
+	width: 80%;
+}
+
+#notification-list .buttons{
+	text-align: center;
+	width: 20%;
+}
+
+hr{
+  margin-top: 50px;
+}

@@ -1,0 +1,35 @@
+  <script src="/Cluk/js/sideBar.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/Cluk/css/stylesheetSidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+
+  <div id="mySidenavManager" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavManager()">&times;</a>
+      <div class="myDropdown">
+        <h5>Orders</h5>
+          <a class="dropdown-item" href="/Cluk/html/ManagerOrderHomepage"><i class="fa fa-plus"></i>New Order</a>
+          <span class="bar"><a class="dropdown-item" href="/Cluk/html/OrderList"><i class="fa fa-history"></i>Order History</a></span>
+          <span class="bar"><a class="dropdown-item" href="/Cluk/html/RestaurantAnalytics"><i class="fa fa-chart-bar"></i>Order Analytics</a></span>
+      </div>
+
+      <hr/>
+      <div class= "myDropdown">
+        <h5>Stock</h5>
+       <span class="bar"><a class="dropdown-item" href="/Cluk/html/RestaurantStock"><i class="fa fa-box"></i>Current Stock</a></span>
+      </div>
+      <hr/>
+  
+    
+      <div class = "myDropdown">
+        <span class="bar"><a class="dropdown-item" href="/Cluk/html/contacts"><i class="fa fa-address-book"></i>Contacts</a></span>
+      </div>
+      <hr/>
+      <div class = "myDropdown">
+        <span class="bar"><a class="dropdown-item" href="/Cluk/php/admin/logout.php"><i class="fa fa-sign-out-alt"></i>Logout</a></span>
+      </div>
+    </div>
+
+  <span class="options" onclick="openNavManager()">&#9776; Options</span>

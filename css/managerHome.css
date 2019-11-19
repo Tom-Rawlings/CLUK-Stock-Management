@@ -1,0 +1,31 @@
+#main{
+	margin: 30px;
+	transition: margin-left .5s;
+}
+
+.container-fluid{
+    width: 30%;
+    float:right;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+#dropdownMenus{
+    margin-top: 150px;
+    padding: inherit;
+}
+
+.input-group-append{
+    height: 39px;
+}
+
+#modal-but{
+    float: right;
+    margin-left: 450px;
+    height: 100px;
+    width: 15%;
+}
+
+#search:hover{
+    background-color: darkgreen;
+}

@@ -1,0 +1,74 @@
+
+/*Setting body to have no margins and have full width. */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*Positioning and styling page header. */
+h4{
+    float: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*Giving margins to deliveries table. */
+table{
+    margin-top: 60px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+/*Giving a size and a position to the search-container. */
+.container-fluid{
+    margin-top: 45px;
+    margin-left: 70%;
+    margin-bottom:20px;
+    width: 30%;
+    float: right;
+}
+
+/*Changing color of search button on hover. */
+#search:hover{
+    background-color: rgb(145, 111, 27);
+}
+
+/*Change color of search button on hover. */
+#search:hover{
+    background-color: goldenrod;
+}
+
+/*Styling background ad text of the pop-up modal header listing deliveries. */
+.modal-header{
+    background-color: goldenrod;
+    color: white;
+    text-transform:uppercase;
+  }
+
+  /*Styling modal's footer. */
+  .modal-footer{
+    background-color: goldenrod;
+  }
+  
+  /*Positioning and styling close button on header. */
+   #x-but{
+    margin-left: 90%;
+    color: white;
+}
+
+/*Changing color of close footer button. */
+#close-but{
+    color: white;
+}
+
+ /*Styling horizontal line to separate orders whithin a delivery modal. */
+ hr{
+    background-color: goldenrod;
+    height: 3px;
+  }
+
+  /*Moving order title to the right of the header*/
+  #itemsDeliveryId{
+    transform: translateX(-150%);
+   }
